@@ -19,8 +19,8 @@ Special features:
 
 credits:
   
-  Vishal Yadav
-  College: Indian Institue of Technology Patna
-  email:vihtlcpp@gmail.com
-  github:https://github.com/VishalIITP
+   Vishal Yadav
+   College: Indian Institue of Technology Patna
+   email:vihtlcpp@gmail.com
+   github:https://github.com/VishalIITP
   
