@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+{%load static%}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>{% block title%}{% endblock title%}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Staatliches&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     
+
+<style>
+        
+        body {
+            background-color: rgb(66, 87, 202);
+            font-family: 'Baloo Tammudu 2', cursive;
+            margin: 0px;
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+        }
+
+
+        #brand-logo {
+            height: 150px;
+            width: 150px;
+        }
+
+        .navbar-brand {
+
+            font-size: 60px;
+            color: black;
+        }
+
+        .navbar-brand:hover {
+            font-size: 60px;
+            color: black;
+
+        }
+
+
+        .nav-link:link {
+            font-size: 32px;
+            text-decoration: none;
+            margin: 5px;
+            color: black;
+
+
+
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+
+
+        .glyphicon {
+            font-size: 27px;
+            color: #ffc39e;
+        }
+
+        .nav-link:hover {
+            background-color: #E7E7E7;
+            border-radius: 5px;
+            color: black;
+
+
+        }
+
+        .active {
+            background-color: #E7E7E7;
+            border-radius: 5px;
+            opacity: 1;
+            text-decoration: none;
+
+        }
+
+
+
+
+
+        .navbar {
+            margin: 0;
+            background-color: #5DADEC;
+
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            background-color: #5DADEC;
+            height: 45px;
+            width: 45px;
+            border: 1px solid orange;
+            color: #ffc39e;
+            opacity: 1;
+            padding: 5px;
+            font-size: 17px;
+            border-radius: 7px;
+        }
+
+        .navbar-toggler:hover {
+            background-color: #ddd;
+        }
+ 
+
+        .navbar-toggler-icon {
+            color: #ffc39e;
+        }
+
+
+
+        footer {
+            background-color: #5DADEC;
+            margin: 0;
+        }
+
+        .navbar-header .navbar-toggler-icon {
+            border: 5px solid #ffc39e;
+        }
+
+        .toggler:nth-child(2) {
+
+            position: absolute;
+            top: 73px;
+            font-weight: 900;
+            color: black;
+
+        }
+
+        .toggler:nth-child(3) {
+
+            position: absolute;
+            top: 80px;
+            font-weight: 900;
+            color: black;
+
+
+        }
+
+        .toggler:nth-child(1) {
+
+            position: absolute;
+            top: 65px;
+            font-weight: 900;
+            color: black;
+
+
+        }
+
+
+
+
+
+
+        /********************maincontent**************/
+
+        /********************ipada tablets**********/
+        @media(max-width:768px)and(min-width:501px) {
+
+            #call {
+                display: block;
+                position: absolute;
+                right: 0px;
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+        /************************Small Devices*****************/
+        /********************Mobile Devices******************/
+        @media (max-width:500px) {
+            /*Header*/
+
+            .nav-link {
+                text-align: center;
+            }
+
+            #call {
+                display: block;
+
+                font-size: 40px;
+                display: block;
+                margin-left: 20px;
+                padding: 10px;
+                position: relative;
+                top: 87px;
+                height: 70px;
+                width: 400px;
+                border: 2px solid #fff;
+                background-color: #5DADEC;
+                color: black;
+                border-radius: 10px;
+
+
+            }
+
+            #brand-logo {
+                height: 70px;
+                width: 70px;
+            }
+
+            .toggler:nth-child(2) {
+
+                position: absolute;
+                top: 32px;
+                font-weight: 900;
+                color: black;
+
+            }
+
+            .toggler:nth-child(3) {
+
+                position: absolute;
+                top: 40px;
+                font-weight: 900;
+                color: black;
+
+
+            }
+
+            .toggler:nth-child(1) {
+
+                position: absolute;
+                top: 25px;
+                font-weight: 900;
+                color: black;
+
+
+            }
+
+            .carousel-inner {
+                display: block;
+                position: relative;
+                margin-top: 83px;
+            }
+
+
+
+
+
+
+        }
+
+        /************1230px*****************/
+
+
+        /*******************1000px*******************/
+
+        /*********************500**************/
+        /*******************370*********************/
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/homepage"><img id="brand-logo"
+                    src="../static/images/115887549_112194363908797_6229618416921809251_n-removebg.png" alt=""
+                    width="30" height="24" class="d-inline-block align-text-top-left"> Barbera</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <div class="toggler">___</div>
+                    <div class="toggler">___</div>
+                    <div class="toggler">___</div>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link {% block activatehomepage%}{% endblock activatehomepage%}" aria-current="page" href="/homepage"><span
+                            class="glyphicon glyphicon-home" aria-hidden="true"></span> Home &nbsp&nbsp&nbsp&nbsp
+                        &nbsp&nbsp</a>
+                    <a class="nav-link {% block activatebookings%}{% endblock activatebookings%}" href="/bookings"><span class="glyphicon glyphicon-book"
+                            aria-hidden="true"></span>
+                        Bookings</a>
+                    <a class="nav-link {% block activatemyCart%}{% endblock activatemyCart%}" href="/myCart"><span class="glyphicon glyphicon-shopping-cart"
+                            aria-hidden="true"></span>My Cart &nbsp&nbsp &nbsp</a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div>
+
+
+            <a class="nav-link " id="call" href="tel:8795972438"><div class="glyphicon glyphicon-phone-alt"
+                    aria-hidden="true"></div> 0512-456123 <font style="font-size: 16px; color:black;"><div class="glyphicon glyphicon-book" style="color: black; font-size:15px;" ></div>&nbspBook on call</font>
+                &nbsp&nbsp</a>
+        </div>
+    </nav>
+
+
+
+
+    {% block body %}
+
+
+
+    {% endblock body%}
+
+
+
+
+ 
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
