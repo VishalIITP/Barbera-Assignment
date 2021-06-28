@@ -23,4 +23,5 @@ credits:
    College: Indian Institue of Technology Patna
    email:vihtlcpp@gmail.com
    github:https://github.com/VishalIITP
+   linkedin:https://www.linkedin.com/in/vishal-yadav-71a514208
   
