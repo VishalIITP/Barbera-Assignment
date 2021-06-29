@@ -20,16 +20,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-     
 
-<style>
-        
+
+    <style>
         body {
             background-color: rgb(66, 87, 202);
             font-family: 'Baloo Tammudu 2', cursive;
             margin: 0px;
             background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
         }
+
+        /****
+            <div class="textoncrousel">
+                <div class="login">Log In</div>
+                <div class="singup">Sign Up</div>
+
+            </div> -->
+        **********/
+
+
+
+        .login {
+            position: absolute;
+            top: 200px;
+            left: 32%;
+            background-color: white;
+            font-size: 50px;
+
+            border-radius: 10px;
+            opacity: 0.3;
+        }
+
+        .signup {
+            position: absolute;
+            top: 200px;
+            right: 32%;
+            background-color: white;
+            font-size: 50px;
+
+            border-radius: 10px;
+            opacity: 0.3;
+        }
+
+
+
+
 
 
         #brand-logo {
@@ -113,7 +148,7 @@
         .navbar-toggler:hover {
             background-color: #ddd;
         }
- 
+
 
         .navbar-toggler-icon {
             color: #ffc39e;
@@ -159,6 +194,16 @@
 
         }
 
+
+        .greeting {
+            background-color: rgb(177, 218, 241);
+            font-size: 40px;
+            height: 200px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            opacity: 0.6;
+        }
 
 
 
@@ -234,7 +279,6 @@
                 font-weight: 900;
                 color: black;
 
-
             }
 
             .toggler:nth-child(1) {
@@ -258,7 +302,99 @@
 
 
 
+
+
+
+
+
+
+
+
+
         }
+
+        /****************************900px********************/
+
+
+        @media(max-width:900px) {
+
+            .login {
+                position: absolute;
+                top: 160px;
+                left: 40%;
+                background-color: white;
+                font-size: 50px;
+
+                border-radius: 10px;
+                opacity: 0.3;
+            }
+
+            .signup {
+                position: absolute;
+                top: 240px;
+                left: 40%;
+                background-color: white;
+                font-size: 50px;
+
+                border-radius: 10px;
+                opacity: 0.3;
+            }
+
+
+        }
+
+        /**************1250px**********/
+        @media(max-width:1250px) and (min-width:901px) {
+            .greeting {
+                background-color: rgb(177, 218, 241);
+                font-size: 40px;
+                height: 250px;
+                width: 100%;
+                position: absolute;
+                top: 0px;
+                opacity: 0.6;
+            }
+        }
+
+
+
+
+        /*******************900*****************/
+
+        @media(max-width:900px) and (min-width:810px) {
+            .greeting {
+                background-color: rgb(177, 218, 241);
+                font-size: 40px;
+                height: 350px;
+                width: 100%;
+                position: absolute;
+                top: 0px;
+                opacity: 0.6;
+            }
+        }
+
+        /**********810px and less************/
+        @media(max-width:809px) and (min-width:300px) {
+            .greeting {
+                background-color: rgb(177, 218, 241);
+                font-size: 40px;
+                height: 350px;
+                width: 100%;
+                position: absolute;
+                top: 305px;
+                opacity: 0.6;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
 
         /************1230px*****************/
 
@@ -293,16 +429,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link {% block activatehomepage%}{% endblock activatehomepage%}" aria-current="page" href="/homepage"><span
-                            class="glyphicon glyphicon-home" aria-hidden="true"></span> Home &nbsp&nbsp&nbsp&nbsp
+                    <a class="nav-link {% block activatehomepage%}{% endblock activatehomepage%}" aria-current="page"
+                        href="/homepage"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
+                        &nbsp&nbsp&nbsp&nbsp
                         &nbsp&nbsp</a>
-                    <a class="nav-link {% block activatebookings%}{% endblock activatebookings%}" href="/bookings"><span class="glyphicon glyphicon-book"
-                            aria-hidden="true"></span>
+                    <a class="nav-link {% block activatebookings%}{% endblock activatebookings%}" href="/bookings"><span
+                            class="glyphicon glyphicon-book" aria-hidden="true"></span>
                         Bookings</a>
-                    <a class="nav-link {% block activatemyCart%}{% endblock activatemyCart%}" href="/myCart"><span class="glyphicon glyphicon-shopping-cart"
-                            aria-hidden="true"></span>My Cart &nbsp&nbsp &nbsp</a>
+                    <a class="nav-link {% block activatemyCart%}{% endblock activatemyCart%}" href="/myCart"><span
+                            class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>My Cart &nbsp&nbsp
+                        &nbsp</a>
 
                 </div>
+
 
 
             </div>
@@ -311,11 +450,16 @@
         <div>
 
 
-            <a class="nav-link " id="call" href="tel:8795972438"><div class="glyphicon glyphicon-phone-alt"
-                    aria-hidden="true"></div> 0512-456123 <font style="font-size: 16px; color:black;"><div class="glyphicon glyphicon-book" style="color: black; font-size:15px;" ></div>&nbspBook on call</font>
-                &nbsp&nbsp</a>
+            <a class="nav-link " id="call" href="tel:8795972438">
+                <div class="glyphicon glyphicon-phone-alt" aria-hidden="true"></div> 0512-456123 <font
+                    style="font-size: 16px; color:black;">
+                    <div class="glyphicon glyphicon-book" style="color: black; font-size:15px;"></div>&nbspBook on call
+                </font>
+                &nbsp&nbsp
+            </a>
         </div>
     </nav>
+
 
 
 
@@ -329,7 +473,7 @@
 
 
 
- 
+
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
