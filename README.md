@@ -7,6 +7,12 @@ The codes are written on Python==3.8.5 Django==3.2.3
 
 use command to install package pip install
 
+$ python3 -m pip install channels_redis
+
+$ docker run -p 6379:6379 -d redis:5
+
+
+
 how to use:
 
 1> go to directory where manage.py file is located i.e.  webdevprojectbarbera/barberaWeb > create superuser use command: python3 manage.py createsuperuser
